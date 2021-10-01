@@ -304,7 +304,7 @@ where
         "--cfg fuzzing \
          -C debug-assertions \
          -C overflow_checks \
-         -C passes=sancov \
+         -C passes=sancov-module \
          -C llvm-args=-sanitizer-coverage-level=3 \
          -C llvm-args=-sanitizer-coverage-trace-pc-guard \
          -C llvm-args=-sanitizer-coverage-prune-blocks=0 \
@@ -323,7 +323,7 @@ where
         "--cfg fuzzing \
          -C debug-assertions \
          -C overflow_checks \
-         -C passes=sancov \
+         -C passes=sancov-module \
          -C llvm-args=-sanitizer-coverage-level=3 \
          -C llvm-args=-sanitizer-coverage-trace-pc-guard \
          -C llvm-args=-sanitizer-coverage-prune-blocks=0 \
